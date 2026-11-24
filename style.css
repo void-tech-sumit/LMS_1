@@ -1,0 +1,47 @@
+/* Whole page */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Green top and bottom */
+header, footer {
+  background: rgb(97, 73, 28);
+  color: rgb(121, 104, 104);
+  padding: 15px;
+}
+
+/* Menu links */
+nav a {
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+}
+
+/* Centre the content */
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* Boxes around events and notice */
+article, aside {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Put each label above its field */
+label {
+  margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  display: block;
+  width: 100%;
+}
+
+/* Show where the keyboard is */
+:focus {
+  outline: 3px solid orange;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student Activity Portal">
+  <title>Student Activity Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top of the page -->
+  <header>
+    <h1>Student Activity Portal</h1>
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <section id="events">
+      <h2>Events</h2>
+      <article>
+        <h3>Tech Fest</h3>
+        <p>5 December 2026</p>
+      </article>
+      <article>
+        <h3>Cricket Cup</h3>
+        <p>12 December 2026</p>
+      </article>
+    </section>
+
+    <!-- Side note -->
+    <aside>
+      <h2>Notice</h2>
+      <p>Registration closes on 3 December.</p>
+    </aside>
+
+    <section id="register">
+      <h2>Register</h2>
+
+      <form onsubmit="return showMessage()">
+
+        <!-- Text fields -->
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <!-- Dropdown -->
+        <label for="dept">Department</label>
+        <select id="dept">
+          <option>Computer Science</option>
+          <option>Business</option>
+        </select>
+
+        <!-- Radio buttons (choose one) -->
+        <fieldset>
+          <legend>Choose an event</legend>
+          <input type="radio" id="tech" name="event" required>
+          <label for="tech">Tech Fest</label>
+          <input type="radio" id="cricket" name="event">
+          <label for="cricket">Cricket Cup</label>
+        </fieldset>
+
+        <!-- Checkboxes (choose many) -->
+        <fieldset>
+          <legend>Interests</legend>
+          <input type="checkbox" id="sports">
+          <label for="sports">Sports</label>
+          <input type="checkbox" id="arts">
+          <label for="arts">Arts</label>
+        </fieldset>
+
+        <!-- Textarea -->
+        <label for="comments">Comments</label>
+        <textarea id="comments" rows="3"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+  </main>
+
+  <!-- Bottom of the page -->
+  <footer>
+    <p>Contact: studentaffairs@university.edu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
